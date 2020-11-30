@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+        integrity="sha256-zmfNZmXoNWBMemUOo1XUGFfc0ihGGLYdgtJS3KCr/l0=" crossorigin="anonymous" />
+
+    <style>
+        body {
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ccc;
+            height: 100vh;
+        }
+
+        .effectbutton {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            height: 150px;
+            color: #3b5999;
+            background-color: #fff;
+            text-align: center;
+            transition: .5s;
+            box-shadow: -20px 20px 10px rgb(0, 0, 0, 0.5);
+            margin-left: 30px;
+        }
+
+        .effectbutton:hover .fab {
+            color: #fff;
+        }
+
+        .effectbutton:hover {
+            transform: translate(15px, -15px);
+            box-shadow: -50px 50px 50px rgb(0, 0, 0, 0.5);
+        }
+
+        body:nth-child(3):hover {
+            transform: translate(15px, 15px);
+        }
+
+        .effectbutton:hover {
+            background: #3b5999;
+            color: #fff;
+        }
+
+        .html5:hover {
+            background-color: orange;
+        }
+
+        .css:hover {
+            background-color: blue;
+        }
+
+        .bootstrap:hover {
+            background-color: #563d7c;
+        }
+
+        .sass:hover {
+            background-color: #c69;
+        }
+
+        .html5 {
+            color: orange;
+        }
+
+        .css {
+            color: blue;
+        }
+
+        .bootstrap {
+            color: #563d7c;
+        }
+
+        .sass {
+            color: #c69;
+        }
+
+        @media only screen and (max-width: 800px) {
+            body {
+                flex-direction: column;
+            }
+
+            .effectbutton {
+                margin-left: 0px;
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="effectbutton html5">
+        <i class="fab fa-html5 fa-7x"></i>HTML
+    </div>
+    <div class="effectbutton css">
+        <i class="fab fa-css3 fa-7x"></i>CSS
+    </div>
+    <div class="effectbutton sass">
+        <i class="fab fa-sass fa-7x"></i>SASS
+    </div>
+    <div class="effectbutton bootstrap">
+        <i class="fab fa-bootstrap fa-7x"></i>Bootstrap
+    </div>
+</body>
+
+</html>
